@@ -1,4 +1,4 @@
 numpy==1.19.4
 ccxt==1.5.1
-networkx==2.2rc1.dev20210313013043
+networkx==2.2rc1
 Cython==0.29.17
