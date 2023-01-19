@@ -29,7 +29,7 @@ class NegativeWeightFinderMulti(NegativeWeightFinder):
             # edge[1] connects to a negative cycle?
             if self.distance_to[edge[0]] + edge[2]['weight'] < self.distance_to[edge[1]]:
                 path = yield self._retrace_negative_cycle(edge[1], unique_paths=unique_paths)
-                if path is None or path is (None, None):
+                if path == None or path == (None, None):
                     continue
                 yield path
 
